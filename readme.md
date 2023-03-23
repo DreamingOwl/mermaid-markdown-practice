@@ -5,7 +5,7 @@ sequenceDiagram
     participant browser
     participant server
     
-    user->>user: Enter new node information
+    user: Enter new node information
     activate user
     user->>browser: Submit form with new node information
     deactivate user
