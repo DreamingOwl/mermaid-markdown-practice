@@ -5,13 +5,14 @@ sequenceDiagram
     participant browser
     participant server
     
-    note right of user: Enter new node information
     activate user
+    note right of user: Enter new node information
     user->>browser: Submit form with new node information
     deactivate user
     
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
+    note left of server: Add/Push new note
     server-->>browser: STATUS: 302, URL redirect /exampleapp/notes
     deactivate server
 
