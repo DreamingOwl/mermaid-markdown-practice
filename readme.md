@@ -1,11 +1,11 @@
 ```mermaid
 
 sequenceDiagram
-    participant user
+    actor user
     participant browser
     participant server
     
-    user: Enter new node information
+    note right of user: Enter new node information
     activate user
     user->>browser: Submit form with new node information
     deactivate user
